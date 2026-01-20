@@ -1,982 +1,0 @@
-`torch_dtype` is deprecated! Use `dtype` instead!
-================================================================================
-Zero-Shot Evaluation - Multi-Model Comparison
-Evaluating 20 Subject-Level Groups
-================================================================================
-
-Models to evaluate (4):
-  1. SeaLLMs/SeaLLMs-v3-7B-Chat
-  2. sail/Sailor-7B-Chat
-  3. google/gemma-3-12b-it
-  4. CohereLabs/aya-expanse-8b
-
-Analyzing dataset to find top 20 subject-level groups...
-Selected 15 groups:
-  1. Bahasa Indonesia (IX SMP) - 10 questions available
-  2. Agama Hindu (SD) - 10 questions available
-  3. Agama Islam (SD) - 10 questions available
-  4. Bahasa Jawa (SD) - 10 questions available
-  5. Agama Kristen (SD) - 10 questions available
-  6. Kesenian (SD) - 10 questions available
-  7. PPKN (SD) - 10 questions available
-  8. Bahasa Sunda (SD) - 10 questions available
-  9. Bahasa Madura (SD) - 10 questions available
-  10. Penjaskes (SD) - 10 questions available
-  11. IPS (SD) - 10 questions available
-  12. Fisika (SMA) - 10 questions available
-  13. IPA (SD) - 10 questions available
-  14. Kimia (SMA) - 10 questions available
-  15. Geografi (SMA) - 10 questions available
-
-
-################################################################################
-# MODEL 1/4: SeaLLMs/SeaLLMs-v3-7B-Chat
-# Processing model 1 of 4 - Sequential execution
-################################################################################
-
-================================================================================
-Loading and evaluating model (zero-shot): SeaLLMs/SeaLLMs-v3-7B-Chat
-================================================================================
-This may take a while on first run as the model will be downloaded...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.53s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.83s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.52s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.31s/it]
-Model loaded successfully!
-Model device: cuda:0
-✓ Model is on cuda:0
-
-================================================================================
-Evaluating questions with SeaLLMs/SeaLLMs-v3-7B-Chat (zero-shot)
-================================================================================
-
-[1/15] Evaluating: Bahasa Indonesia (IX SMP)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:06,  1.43question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:01<00:04,  1.66question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:01<00:01,  3.50question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:01<00:00,  5.28question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  6.86question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  8.35question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  5.25question/s]
-
-  Timing stats: 10 questions in 1.91s
-    Avg per question: 0.19s
-    Tokenize: 0.03s (1.3%)
-    Generate: 1.88s (98.5%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[2/15] Evaluating: Agama Hindu (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:01,  4.93question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:00, 10.52question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  9.85question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:00<00:00, 10.25question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  7.87question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.98question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  7.86question/s]
-
-  Timing stats: 10 questions in 1.27s
-    Avg per question: 0.13s
-    Tokenize: 0.01s (0.5%)
-    Generate: 1.26s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 3/10 correct (30.00%)
-
-[3/15] Evaluating: Agama Islam (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:00,  9.23question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  8.09question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  7.62question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  7.31question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:00<00:00,  7.10question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  6.32question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.41question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.94question/s]
-
-  Timing stats: 10 questions in 1.44s
-    Avg per question: 0.14s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.43s (99.5%)
-    Decode: 0.00s (0.0%)
-  Results: 7/10 correct (70.00%)
-
-[4/15] Evaluating: Bahasa Jawa (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:02,  3.34question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:01,  4.72question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:01,  5.98question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  7.21question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:01<00:00,  6.72question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  7.00question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  7.23question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.97question/s]
-
-  Timing stats: 10 questions in 1.43s
-    Avg per question: 0.14s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.43s (99.5%)
-    Decode: 0.00s (0.0%)
-  Results: 7/10 correct (70.00%)
-
-[5/15] Evaluating: Agama Kristen (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:00, 16.66question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  6.60question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  6.25question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:01<00:00,  5.15question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:01<00:00,  4.18question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  6.38question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.53question/s]
-
-  Timing stats: 10 questions in 1.53s
-    Avg per question: 0.15s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.52s (99.5%)
-    Decode: 0.00s (0.0%)
-  Results: 6/10 correct (60.00%)
-
-[6/15] Evaluating: Kesenian (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:01,  6.64question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:01,  6.09question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  9.44question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  8.24question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  8.13question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:00<00:00,  8.22question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  8.36question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  8.18question/s]
-
-  Timing stats: 10 questions in 1.22s
-    Avg per question: 0.12s
-    Tokenize: 0.01s (0.5%)
-    Generate: 1.22s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 6/10 correct (60.00%)
-
-[7/15] Evaluating: PPKN (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:01,  5.75question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:01,  5.21question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:01,  6.18question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  9.65question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:01<00:00,  6.46question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  8.57question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  7.42question/s]
-
-  Timing stats: 10 questions in 1.35s
-    Avg per question: 0.13s
-    Tokenize: 0.01s (0.5%)
-    Generate: 1.34s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 8/10 correct (80.00%)
-
-[8/15] Evaluating: Bahasa Sunda (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:01,  6.65question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:01,  7.34question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:00,  7.59question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  6.61question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  6.54question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  7.29question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:00<00:00,  7.48question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  6.11question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  6.58question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.21question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.63question/s]
-
-  Timing stats: 10 questions in 1.51s
-    Avg per question: 0.15s
-    Tokenize: 0.01s (0.5%)
-    Generate: 1.50s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 5/10 correct (50.00%)
-
-[9/15] Evaluating: Bahasa Madura (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:02,  3.34question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:01,  6.73question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  6.62question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  6.54question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  6.92question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:01<00:00,  6.84question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  7.14question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  6.99question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.88question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.64question/s]
-
-  Timing stats: 10 questions in 1.51s
-    Avg per question: 0.15s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.50s (99.5%)
-    Decode: 0.00s (0.0%)
-  Results: 5/10 correct (50.00%)
-
-[10/15] Evaluating: Penjaskes (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:00,  8.53question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:00,  7.07question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  6.50question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  6.93question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  7.66question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  7.00question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  7.21question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.73question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  7.00question/s]
-
-  Timing stats: 10 questions in 1.43s
-    Avg per question: 0.14s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.42s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 9/10 correct (90.00%)
-
-[11/15] Evaluating: IPS (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:00,  9.77question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:00, 10.69question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  8.59question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  8.87question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:00<00:00,  6.98question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  6.04question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  8.25question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  8.07question/s]
-
-  Timing stats: 10 questions in 1.24s
-    Avg per question: 0.12s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.23s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 8/10 correct (80.00%)
-
-[12/15] Evaluating: Fisika (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:01,  4.72question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:00,  8.21question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  8.64question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00, 11.08question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:00<00:00, 12.51question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  8.45question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  8.90question/s]
-
-  Timing stats: 10 questions in 1.12s
-    Avg per question: 0.11s
-    Tokenize: 0.01s (0.6%)
-    Generate: 1.11s (99.2%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[13/15] Evaluating: IPA (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:01,  7.56question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:01,  5.31question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00,  9.27question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  9.91question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  7.58question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  7.57question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  7.32question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  7.66question/s]
-
-  Timing stats: 10 questions in 1.31s
-    Avg per question: 0.13s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.30s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 7/10 correct (70.00%)
-
-[14/15] Evaluating: Kimia (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:02,  4.39question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  30%|███       | 3/10 [00:00<00:00,  8.78question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  50%|█████     | 5/10 [00:00<00:00,  6.99question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:01<00:00,  5.71question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  80%|████████  | 8/10 [00:01<00:00,  4.64question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.27question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  6.05question/s]
-
-  Timing stats: 10 questions in 1.65s
-    Avg per question: 0.17s
-    Tokenize: 0.01s (0.4%)
-    Generate: 1.65s (99.5%)
-    Decode: 0.00s (0.0%)
-  Results: 6/10 correct (60.00%)
-
-[15/15] Evaluating: Geografi (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  10%|█         | 1/10 [00:00<00:01,  5.53question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  20%|██        | 2/10 [00:00<00:01,  6.56question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  40%|████      | 4/10 [00:00<00:00, 10.57question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  60%|██████    | 6/10 [00:00<00:00,  6.81question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  70%|███████   | 7/10 [00:00<00:00,  6.98question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat):  90%|█████████ | 9/10 [00:01<00:00,  7.16question/s]Evaluating questions (SeaLLMs/SeaLLMs-v3-7B-Chat): 100%|██████████| 10/10 [00:01<00:00,  7.52question/s]
-
-  Timing stats: 10 questions in 1.33s
-    Avg per question: 0.13s
-    Tokenize: 0.01s (0.5%)
-    Generate: 1.32s (99.4%)
-    Decode: 0.00s (0.0%)
-  Results: 6/10 correct (60.00%)
-
-  Cleaning up SeaLLMs/SeaLLMs-v3-7B-Chat from memory...
-  ✓ Cleanup complete. Ready for next model.
-
-================================================================================
-SUMMARY for SeaLLMs/SeaLLMs-v3-7B-Chat
-================================================================================
-Total Questions: 150
-Correct Answers: 91
-Overall Accuracy: 60.67%
-================================================================================
-
-
-################################################################################
-# MODEL 2/4: sail/Sailor-7B-Chat
-# Processing model 2 of 4 - Sequential execution
-################################################################################
-
-================================================================================
-Loading and evaluating model (zero-shot): sail/Sailor-7B-Chat
-================================================================================
-This may take a while on first run as the model will be downloaded...
-Model loaded successfully!
-Model device: cuda:0
-✓ Model is on cuda:0
-
-================================================================================
-Evaluating questions with sail/Sailor-7B-Chat (zero-shot)
-================================================================================
-
-[1/15] Evaluating: Bahasa Indonesia (IX SMP)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:01<00:06,  1.16question/s]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:02<00:04,  1.71question/s]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:02<00:02,  2.28question/s]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:02<00:02,  2.24question/s]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:03<00:01,  2.23question/s]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:03<00:01,  2.00question/s]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:04<00:01,  1.72question/s]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:05<00:00,  1.57question/s]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:06<00:00,  1.24question/s]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:06<00:00,  1.53question/s]
-
-  Timing stats: 10 questions in 6.53s
-    Avg per question: 0.65s
-    Tokenize: 0.02s (0.2%)
-    Generate: 6.52s (99.7%)
-    Decode: 0.00s (0.0%)
-  Results: 6/10 correct (60.00%)
-
-[2/15] Evaluating: Agama Hindu (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:08,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:05,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:08<00:03,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:10<00:02,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:11<00:01,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.28s/question]
-
-  Timing stats: 10 questions in 12.78s
-    Avg per question: 1.28s
-    Tokenize: 0.01s (0.1%)
-    Generate: 12.76s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[3/15] Evaluating: Agama Islam (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:07,  1.01question/s]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:02<00:04,  1.64question/s]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:03<00:05,  1.14question/s]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:04<00:05,  1.02s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:06<00:04,  1.11s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:07<00:03,  1.17s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:08<00:02,  1.20s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:09<00:01,  1.23s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:10<00:00,  1.09s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:10<00:00,  1.07s/question]
-
-  Timing stats: 10 questions in 10.70s
-    Avg per question: 1.07s
-    Tokenize: 0.01s (0.1%)
-    Generate: 10.69s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 6/10 correct (60.00%)
-
-[4/15] Evaluating: Bahasa Jawa (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:02<00:05,  1.29question/s]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:04<00:05,  1.02question/s]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:05<00:05,  1.09s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:06<00:04,  1.16s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:07<00:03,  1.20s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:09<00:02,  1.23s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:10<00:01,  1.24s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.26s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.17s/question]
-
-  Timing stats: 10 questions in 11.74s
-    Avg per question: 1.17s
-    Tokenize: 0.01s (0.1%)
-    Generate: 11.73s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 3/10 correct (30.00%)
-
-[5/15] Evaluating: Agama Kristen (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:00<00:03,  2.44question/s]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:01<00:07,  1.07question/s]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:02<00:07,  1.10s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:04<00:07,  1.17s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:05<00:06,  1.21s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:06<00:04,  1.24s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:08<00:03,  1.26s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:09<00:02,  1.27s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:10<00:01,  1.27s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.02question/s]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.11s/question]
-
-  Timing stats: 10 questions in 11.05s
-    Avg per question: 1.11s
-    Tokenize: 0.01s (0.1%)
-    Generate: 11.04s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 8/10 correct (80.00%)
-
-[6/15] Evaluating: Kesenian (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:01<00:05,  1.55question/s]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:02<00:06,  1.06question/s]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:02<00:03,  1.52question/s]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:04<00:04,  1.13question/s]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:05<00:04,  1.02s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:06<00:03,  1.11s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:07<00:02,  1.05s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:09<00:01,  1.12s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:10<00:00,  1.18s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:10<00:00,  1.04s/question]
-
-  Timing stats: 10 questions in 10.36s
-    Avg per question: 1.04s
-    Tokenize: 0.01s (0.1%)
-    Generate: 10.35s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 6/10 correct (60.00%)
-
-[7/15] Evaluating: PPKN (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:09,  1.17s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:08,  1.22s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:04<00:07,  1.25s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.26s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:04,  1.12s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:08<00:03,  1.17s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:09<00:02,  1.22s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:10<00:01,  1.24s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.25s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.22s/question]
-
-  Timing stats: 10 questions in 12.24s
-    Avg per question: 1.22s
-    Tokenize: 0.01s (0.1%)
-    Generate: 12.23s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 9/10 correct (90.00%)
-
-[8/15] Evaluating: Bahasa Sunda (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:08,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:06<00:03,  1.09question/s]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:07<00:03,  1.04s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:09<00:02,  1.14s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:10<00:01,  1.19s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.22s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.19s/question]
-
-  Timing stats: 10 questions in 11.86s
-    Avg per question: 1.19s
-    Tokenize: 0.01s (0.1%)
-    Generate: 11.84s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[9/15] Evaluating: Bahasa Madura (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:09,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:05,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:09<00:03,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:10<00:02,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:11<00:01,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.29s/question]
-
-  Timing stats: 10 questions in 12.90s
-    Avg per question: 1.29s
-    Tokenize: 0.01s (0.1%)
-    Generate: 12.88s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[10/15] Evaluating: Penjaskes (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:09,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:05,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:09<00:03,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:10<00:02,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:11<00:01,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.29s/question]
-
-  Timing stats: 10 questions in 12.89s
-    Avg per question: 1.29s
-    Tokenize: 0.01s (0.1%)
-    Generate: 12.88s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 7/10 correct (70.00%)
-
-[11/15] Evaluating: IPS (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:09,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:05,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:09<00:03,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:10<00:02,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:10<00:01,  1.07s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.14s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.22s/question]
-
-  Timing stats: 10 questions in 12.18s
-    Avg per question: 1.22s
-    Tokenize: 0.01s (0.1%)
-    Generate: 12.17s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 9/10 correct (90.00%)
-
-[12/15] Evaluating: Fisika (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.31s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.31s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:09,  1.32s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.32s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.32s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:04,  1.02s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:07<00:02,  1.18question/s]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:08<00:01,  1.13question/s]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:09<00:01,  1.01s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.11s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.11s/question]
-
-  Timing stats: 10 questions in 11.10s
-    Avg per question: 1.11s
-    Tokenize: 0.01s (0.1%)
-    Generate: 11.08s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 3/10 correct (30.00%)
-
-[13/15] Evaluating: IPA (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:09,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:05<00:05,  1.10s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:04,  1.16s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:08<00:03,  1.21s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:09<00:02,  1.04s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:10<00:01,  1.12s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.03question/s]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:11<00:00,  1.11s/question]
-
-  Timing stats: 10 questions in 11.11s
-    Avg per question: 1.11s
-    Tokenize: 0.01s (0.1%)
-    Generate: 11.10s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[14/15] Evaluating: Kimia (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.32s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:09,  1.31s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.31s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:05<00:04,  1.06question/s]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:06<00:04,  1.06s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:08<00:03,  1.15s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:09<00:02,  1.18s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:10<00:01,  1.21s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.25s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.20s/question]
-
-  Timing stats: 10 questions in 12.02s
-    Avg per question: 1.20s
-    Tokenize: 0.01s (0.1%)
-    Generate: 12.01s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 5/10 correct (50.00%)
-
-[15/15] Evaluating: Geografi (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (sail/Sailor-7B-Chat):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (sail/Sailor-7B-Chat):  10%|█         | 1/10 [00:01<00:11,  1.28s/question]Evaluating questions (sail/Sailor-7B-Chat):  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat):  30%|███       | 3/10 [00:03<00:09,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat):  40%|████      | 4/10 [00:05<00:07,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat):  50%|█████     | 5/10 [00:06<00:06,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat):  60%|██████    | 6/10 [00:07<00:05,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat):  70%|███████   | 7/10 [00:09<00:03,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat):  80%|████████  | 8/10 [00:10<00:02,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat):  90%|█████████ | 9/10 [00:11<00:01,  1.30s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.29s/question]Evaluating questions (sail/Sailor-7B-Chat): 100%|██████████| 10/10 [00:12<00:00,  1.30s/question]
-
-  Timing stats: 10 questions in 12.96s
-    Avg per question: 1.30s
-    Tokenize: 0.01s (0.1%)
-    Generate: 12.95s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 3/10 correct (30.00%)
-
-  Cleaning up sail/Sailor-7B-Chat from memory...
-  ✓ Cleanup complete. Ready for next model.
-
-================================================================================
-SUMMARY for sail/Sailor-7B-Chat
-================================================================================
-Total Questions: 150
-Correct Answers: 78
-Overall Accuracy: 52.00%
-================================================================================
-
-
-################################################################################
-# MODEL 3/4: google/gemma-3-12b-it
-# Processing model 3 of 4 - Sequential execution
-################################################################################
-
-================================================================================
-Loading and evaluating model (zero-shot): google/gemma-3-12b-it
-================================================================================
-This may take a while on first run as the model will be downloaded...
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:03<00:13,  3.40s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:06<00:09,  3.14s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:07<00:04,  2.15s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:09<00:02,  2.02s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:10<00:00,  1.66s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:10<00:00,  2.03s/it]
-Model loaded successfully!
-Model device: cuda:0
-✓ Model is on cuda:0
-
-================================================================================
-Evaluating questions with google/gemma-3-12b-it (zero-shot)
-================================================================================
-
-[1/15] Evaluating: Bahasa Indonesia (IX SMP)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:22,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:11<00:16,  2.77s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.78s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:11,  2.77s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.77s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:22<00:05,  2.78s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.77s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.75s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.76s/question]
-
-  Timing stats: 10 questions in 27.63s
-    Avg per question: 2.76s
-    Tokenize: 0.02s (0.1%)
-    Generate: 27.60s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[2/15] Evaluating: Agama Hindu (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]
-
-  Timing stats: 10 questions in 27.21s
-    Avg per question: 2.72s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.20s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[3/15] Evaluating: Agama Islam (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.73s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]
-
-  Timing stats: 10 questions in 27.23s
-    Avg per question: 2.72s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.22s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 3/10 correct (30.00%)
-
-[4/15] Evaluating: Bahasa Jawa (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]
-
-  Timing stats: 10 questions in 27.19s
-    Avg per question: 2.72s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.18s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[5/15] Evaluating: Agama Kristen (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:18<00:08,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]
-
-  Timing stats: 10 questions in 27.17s
-    Avg per question: 2.72s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.15s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[6/15] Evaluating: Kesenian (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.73s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.73s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.73s/question]
-
-  Timing stats: 10 questions in 27.29s
-    Avg per question: 2.73s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.28s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-[7/15] Evaluating: PPKN (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.70s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:18,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]
-
-  Timing stats: 10 questions in 27.18s
-    Avg per question: 2.72s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.16s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-[8/15] Evaluating: Bahasa Sunda (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.70s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:18,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.75s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.74s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.73s/question]
-
-  Timing stats: 10 questions in 27.31s
-    Avg per question: 2.73s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.30s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-[9/15] Evaluating: Bahasa Madura (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.71s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.75s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.73s/question]
-
-  Timing stats: 10 questions in 27.34s
-    Avg per question: 2.73s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.33s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-[10/15] Evaluating: Penjaskes (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.70s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.70s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:18,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.73s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]
-
-  Timing stats: 10 questions in 27.22s
-    Avg per question: 2.72s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.21s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 3/10 correct (30.00%)
-
-[11/15] Evaluating: IPS (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.70s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:18,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.72s/question]
-
-  Timing stats: 10 questions in 27.16s
-    Avg per question: 2.72s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.14s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 4/10 correct (40.00%)
-
-[12/15] Evaluating: Fisika (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:22,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.74s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.74s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.74s/question]
-
-  Timing stats: 10 questions in 27.42s
-    Avg per question: 2.74s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.41s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-[13/15] Evaluating: IPA (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.75s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:10<00:16,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.70s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.78s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.75s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.74s/question]
-
-  Timing stats: 10 questions in 27.36s
-    Avg per question: 2.74s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.35s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[14/15] Evaluating: Kimia (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:24,  2.68s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:21,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.80s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:11<00:16,  2.76s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.71s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.70s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.75s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.74s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.74s/question]
-
-  Timing stats: 10 questions in 27.36s
-    Avg per question: 2.74s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.34s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-[15/15] Evaluating: Geografi (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (google/gemma-3-12b-it):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (google/gemma-3-12b-it):  10%|█         | 1/10 [00:02<00:26,  2.89s/question]Evaluating questions (google/gemma-3-12b-it):  20%|██        | 2/10 [00:05<00:22,  2.82s/question]Evaluating questions (google/gemma-3-12b-it):  30%|███       | 3/10 [00:08<00:19,  2.77s/question]Evaluating questions (google/gemma-3-12b-it):  40%|████      | 4/10 [00:11<00:16,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  50%|█████     | 5/10 [00:13<00:13,  2.76s/question]Evaluating questions (google/gemma-3-12b-it):  60%|██████    | 6/10 [00:16<00:10,  2.74s/question]Evaluating questions (google/gemma-3-12b-it):  70%|███████   | 7/10 [00:19<00:08,  2.73s/question]Evaluating questions (google/gemma-3-12b-it):  80%|████████  | 8/10 [00:21<00:05,  2.72s/question]Evaluating questions (google/gemma-3-12b-it):  90%|█████████ | 9/10 [00:24<00:02,  2.71s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.71s/question]Evaluating questions (google/gemma-3-12b-it): 100%|██████████| 10/10 [00:27<00:00,  2.74s/question]
-
-  Timing stats: 10 questions in 27.37s
-    Avg per question: 2.74s
-    Tokenize: 0.01s (0.0%)
-    Generate: 27.36s (100.0%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-  Cleaning up google/gemma-3-12b-it from memory...
-  ✓ Cleanup complete. Ready for next model.
-
-================================================================================
-SUMMARY for google/gemma-3-12b-it
-================================================================================
-Total Questions: 150
-Correct Answers: 35
-Overall Accuracy: 23.33%
-================================================================================
-
-
-################################################################################
-# MODEL 4/4: CohereLabs/aya-expanse-8b
-# Processing model 4 of 4 - Sequential execution
-################################################################################
-
-================================================================================
-Loading and evaluating model (zero-shot): CohereLabs/aya-expanse-8b
-================================================================================
-This may take a while on first run as the model will be downloaded...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:04<00:13,  4.42s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.43s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.77s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.36s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.81s/it]
-Model loaded successfully!
-Model device: cuda:0
-✓ Model is on cuda:0
-
-================================================================================
-Evaluating questions with CohereLabs/aya-expanse-8b (zero-shot)
-================================================================================
-
-[1/15] Evaluating: Bahasa Indonesia (IX SMP)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:07,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.41s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.40s/question]
-
-  Timing stats: 10 questions in 13.96s
-    Avg per question: 1.40s
-    Tokenize: 0.02s (0.2%)
-    Generate: 13.93s (99.8%)
-    Decode: 0.00s (0.0%)
-  Results: 0/10 correct (0.00%)
-
-[2/15] Evaluating: Agama Hindu (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.79s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.78s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[3/15] Evaluating: Agama Islam (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.83s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.82s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[4/15] Evaluating: Bahasa Jawa (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.84s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.82s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 0/10 correct (0.00%)
-
-[5/15] Evaluating: Agama Kristen (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.84s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.83s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 2/10 correct (20.00%)
-
-[6/15] Evaluating: Kesenian (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.81s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.80s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[7/15] Evaluating: PPKN (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.80s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.79s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 0/10 correct (0.00%)
-
-[8/15] Evaluating: Bahasa Sunda (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.37s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]
-
-  Timing stats: 10 questions in 13.90s
-    Avg per question: 1.39s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.89s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[9/15] Evaluating: Bahasa Madura (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.84s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.83s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 0/10 correct (0.00%)
-
-[10/15] Evaluating: Penjaskes (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:10,  1.19s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:10,  1.30s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:03<00:09,  1.34s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.35s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.36s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.37s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:10<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.36s/question]
-
-  Timing stats: 10 questions in 13.62s
-    Avg per question: 1.36s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.61s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 3/10 correct (30.00%)
-
-[11/15] Evaluating: IPS (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.80s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.79s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[12/15] Evaluating: Fisika (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.40s/question]
-
-  Timing stats: 10 questions in 13.96s
-    Avg per question: 1.40s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.95s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[13/15] Evaluating: IPA (SD)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
-
-  Timing stats: 10 questions in 13.84s
-    Avg per question: 1.38s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.83s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[14/15] Evaluating: Kimia (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.40s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]
-
-  Timing stats: 10 questions in 13.95s
-    Avg per question: 1.39s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.94s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 1/10 correct (10.00%)
-
-[15/15] Evaluating: Geografi (SMA)
-  Available questions: 10, Sampling: 10
-  ✓ Loaded 10 questions
-Evaluating questions (CohereLabs/aya-expanse-8b):   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions (CohereLabs/aya-expanse-8b):  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  30%|███       | 3/10 [00:04<00:09,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  50%|█████     | 5/10 [00:06<00:06,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  60%|██████    | 6/10 [00:08<00:05,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  70%|███████   | 7/10 [00:09<00:04,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  80%|████████  | 8/10 [00:11<00:02,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b):  90%|█████████ | 9/10 [00:12<00:01,  1.39s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions (CohereLabs/aya-expanse-8b): 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]
-
-  Timing stats: 10 questions in 13.86s
-    Avg per question: 1.39s
-    Tokenize: 0.01s (0.1%)
-    Generate: 13.85s (99.9%)
-    Decode: 0.00s (0.0%)
-  Results: 0/10 correct (0.00%)
-
-  Cleaning up CohereLabs/aya-expanse-8b from memory...
-  ✓ Cleanup complete. Ready for next model.
-
-================================================================================
-SUMMARY for CohereLabs/aya-expanse-8b
-================================================================================
-Total Questions: 150
-Correct Answers: 13
-Overall Accuracy: 8.67%
-================================================================================
-
-
-================================================================================
-COMPARATIVE SUMMARY - ALL MODELS (ZERO-SHOT)
-================================================================================
-Model                                              Accuracy        Correct/Total       
---------------------------------------------------------------------------------
-SeaLLMs/SeaLLMs-v3-7B-Chat                          60.67%         91/150
-sail/Sailor-7B-Chat                                 52.00%         78/150
-google/gemma-3-12b-it                               23.33%         35/150
-CohereLabs/aya-expanse-8b                            8.67%         13/150
-================================================================================
-
-🏆 Best Model (Zero-Shot): SeaLLMs/SeaLLMs-v3-7B-Chat with 60.67% accuracy
-
-
-================================================================================
-DETAILED STATISTICS BY MODEL (ZERO-SHOT)
-================================================================================
-
---------------------------------------------------------------------------------
-Model: SeaLLMs/SeaLLMs-v3-7B-Chat
---------------------------------------------------------------------------------
-
-Accuracy by Subject:
-Subject                                  Accuracy            
-------------------------------------------------------------
-Agama Hindu                              3/10 (30.00%)
-Agama Islam                              7/10 (70.00%)
-Agama Kristen                            6/10 (60.00%)
-Bahasa Indonesia                         4/10 (40.00%)
-Bahasa Jawa                              7/10 (70.00%)
-Bahasa Madura                            5/10 (50.00%)
-Bahasa Sunda                             5/10 (50.00%)
-Fisika                                   4/10 (40.00%)
-Geografi                                 6/10 (60.00%)
-IPA                                      7/10 (70.00%)
-IPS                                      8/10 (80.00%)
-Kesenian                                 6/10 (60.00%)
-Kimia                                    6/10 (60.00%)
-PPKN                                     8/10 (80.00%)
-Penjaskes                                9/10 (90.00%)
-
---------------------------------------------------------------------------------
-Model: sail/Sailor-7B-Chat
---------------------------------------------------------------------------------
-
-Accuracy by Subject:
-Subject                                  Accuracy            
-------------------------------------------------------------
-Agama Hindu                              4/10 (40.00%)
-Agama Islam                              6/10 (60.00%)
-Agama Kristen                            8/10 (80.00%)
-Bahasa Indonesia                         6/10 (60.00%)
-Bahasa Jawa                              3/10 (30.00%)
-Bahasa Madura                            1/10 (10.00%)
-Bahasa Sunda                             4/10 (40.00%)
-Fisika                                   3/10 (30.00%)
-Geografi                                 3/10 (30.00%)
-IPA                                      4/10 (40.00%)
-IPS                                      9/10 (90.00%)
-Kesenian                                 6/10 (60.00%)
-Kimia                                    5/10 (50.00%)
-PPKN                                     9/10 (90.00%)
-Penjaskes                                7/10 (70.00%)
-
---------------------------------------------------------------------------------
-Model: google/gemma-3-12b-it
---------------------------------------------------------------------------------
-
-Accuracy by Subject:
-Subject                                  Accuracy            
-------------------------------------------------------------
-Agama Hindu                              4/10 (40.00%)
-Agama Islam                              3/10 (30.00%)
-Agama Kristen                            4/10 (40.00%)
-Bahasa Indonesia                         1/10 (10.00%)
-Bahasa Jawa                              1/10 (10.00%)
-Bahasa Madura                            2/10 (20.00%)
-Bahasa Sunda                             2/10 (20.00%)
-Fisika                                   2/10 (20.00%)
-Geografi                                 2/10 (20.00%)
-IPA                                      1/10 (10.00%)
-IPS                                      4/10 (40.00%)
-Kesenian                                 2/10 (20.00%)
-Kimia                                    2/10 (20.00%)
-PPKN                                     2/10 (20.00%)
-Penjaskes                                3/10 (30.00%)
-
---------------------------------------------------------------------------------
-Model: CohereLabs/aya-expanse-8b
---------------------------------------------------------------------------------
-
-Accuracy by Subject:
-Subject                                  Accuracy            
-------------------------------------------------------------
-Agama Hindu                              1/10 (10.00%)
-Agama Islam                              1/10 (10.00%)
-Agama Kristen                            2/10 (20.00%)
-Bahasa Indonesia                         0/10 (0.00%)
-Bahasa Jawa                              0/10 (0.00%)
-Bahasa Madura                            0/10 (0.00%)
-Bahasa Sunda                             1/10 (10.00%)
-Fisika                                   1/10 (10.00%)
-Geografi                                 0/10 (0.00%)
-IPA                                      1/10 (10.00%)
-IPS                                      1/10 (10.00%)
-Kesenian                                 1/10 (10.00%)
-Kimia                                    1/10 (10.00%)
-PPKN                                     0/10 (0.00%)
-Penjaskes                                3/10 (30.00%)
