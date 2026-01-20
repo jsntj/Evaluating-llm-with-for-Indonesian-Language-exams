@@ -1,0 +1,1103 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+================================================================================
+Chain of Thought (COT) Evaluation - Multi-Model Comparison
+Evaluating 20 Subject-Level Groups
+================================================================================
+Warning: /home/bal9624/rag/seallm.txt not found. Using default models.
+
+Models to evaluate (4):
+  1. SeaLLMs/SeaLLMs-v3-7B-Chat
+  2. sail/Sailor-7B-Chat
+  3. google/gemma-3-12b-it
+  4. CohereLabs/aya-expanse-8b
+
+Analyzing dataset to find top 20 subject-level groups...
+Selected 15 groups:
+  1. Bahasa Sunda (SD) - 718 questions available
+  2. IPA (SD) - 488 questions available
+  3. Biologi (SMA) - 457 questions available
+  4. Kimia (Seleksi PTN) - 398 questions available
+  5. Bahasa Jawa (SD) - 396 questions available
+  6. Bahasa Indonesia (Seleksi PTN) - 381 questions available
+  7. Agama Islam (SMA) - 300 questions available
+  8. PPKN (SMA) - 300 questions available
+  9. IPS (SD) - 300 questions available
+  10. Sejarah (SMA) - 300 questions available
+  11. Fisika (SMA) - 297 questions available
+  12. Ekonomi (SMA) - 296 questions available
+  13. Sosiologi (SMA) - 295 questions available
+  14. Geografi (Seleksi PTN) - 294 questions available
+  15. Kesenian (SMA) - 201 questions available
+
+
+################################################################################
+# MODEL 1/4: SeaLLMs/SeaLLMs-v3-7B-Chat
+# Processing model 1 of 4 - Sequential execution
+################################################################################
+
+================================================================================
+Loading and evaluating model: SeaLLMs/SeaLLMs-v3-7B-Chat
+================================================================================
+This may take a while on first run as the model will be downloaded...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.02s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.01s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.61it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.35it/s]
+Model loaded successfully!
+Model device: cuda:0
+✓ Model is on cuda:0
+
+================================================================================
+Evaluating questions with SeaLLMs/SeaLLMs-v3-7B-Chat
+================================================================================
+
+[1/15] Evaluating: Bahasa Sunda (SD)
+  Available questions: 718, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Evaluating questions:  10%|█         | 1/10 [00:01<00:15,  1.72s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.42s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.32s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.28s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.25s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:03,  1.12question/s]Evaluating questions:  70%|███████   | 7/10 [00:07<00:02,  1.00question/s]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.07s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.11s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.14s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.16s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 11.61s
+    Avg per question: 1.16s
+    Tokenize: 0.02s (0.2%)
+    Generate: 11.59s (99.8%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[2/15] Evaluating: IPA (SD)
+  Available questions: 488, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:10,  1.21s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.21s/question]Evaluating questions:  30%|███       | 3/10 [00:02<00:05,  1.29question/s]Evaluating questions:  40%|████      | 4/10 [00:02<00:03,  1.68question/s]Evaluating questions:  50%|█████     | 5/10 [00:04<00:04,  1.22question/s]Evaluating questions:  60%|██████    | 6/10 [00:05<00:03,  1.05question/s]Evaluating questions:  70%|███████   | 7/10 [00:06<00:03,  1.04s/question]Evaluating questions:  80%|████████  | 8/10 [00:07<00:02,  1.09s/question]Evaluating questions:  90%|█████████ | 9/10 [00:08<00:00,  1.08question/s]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.01s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.04question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 6/10 (60.0%)
+  Timing stats: 10 questions in 9.60s
+    Avg per question: 0.96s
+    Tokenize: 0.01s (0.1%)
+    Generate: 9.59s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 6/10 correct (60.00%)
+
+[3/15] Evaluating: Biologi (SMA)
+  Available questions: 457, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:00<00:03,  2.67question/s]Evaluating questions:  20%|██        | 2/10 [00:01<00:06,  1.15question/s]Evaluating questions:  30%|███       | 3/10 [00:01<00:04,  1.58question/s]Evaluating questions:  40%|████      | 4/10 [00:03<00:05,  1.16question/s]Evaluating questions:  50%|█████     | 5/10 [00:04<00:04,  1.01question/s]Evaluating questions:  60%|██████    | 6/10 [00:04<00:03,  1.27question/s]Evaluating questions:  70%|███████   | 7/10 [00:05<00:02,  1.08question/s]Evaluating questions:  80%|████████  | 8/10 [00:06<00:01,  1.41question/s]Evaluating questions:  90%|█████████ | 9/10 [00:07<00:00,  1.15question/s]Evaluating questions: 100%|██████████| 10/10 [00:08<00:00,  1.02question/s]Evaluating questions: 100%|██████████| 10/10 [00:08<00:00,  1.15question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 8.67s
+    Avg per question: 0.87s
+    Tokenize: 0.01s (0.1%)
+    Generate: 8.66s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[4/15] Evaluating: Kimia (Seleksi PTN)
+  Available questions: 398, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:00<00:04,  2.13question/s]Evaluating questions:  20%|██        | 2/10 [00:00<00:02,  2.92question/s]Evaluating questions:  30%|███       | 3/10 [00:01<00:02,  2.55question/s]Evaluating questions:  40%|████      | 4/10 [00:02<00:04,  1.39question/s]Evaluating questions:  50%|█████     | 5/10 [00:03<00:04,  1.11question/s]Evaluating questions:  60%|██████    | 6/10 [00:04<00:03,  1.24question/s]Evaluating questions:  70%|███████   | 7/10 [00:05<00:02,  1.06question/s]Evaluating questions:  80%|████████  | 8/10 [00:06<00:02,  1.03s/question]Evaluating questions:  90%|█████████ | 9/10 [00:07<00:01,  1.09s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.13s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.10question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 9.11s
+    Avg per question: 0.91s
+    Tokenize: 0.01s (0.1%)
+    Generate: 9.10s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[5/15] Evaluating: Bahasa Jawa (SD)
+  Available questions: 396, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:10,  1.22s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.22s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.22s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:07,  1.22s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.22s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:04,  1.21s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.22s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.22s/question]Evaluating questions:  90%|█████████ | 9/10 [00:09<00:00,  1.10question/s]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.01s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.12s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 11.19s
+    Avg per question: 1.12s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.18s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[6/15] Evaluating: Bahasa Indonesia (Seleksi PTN)
+  Available questions: 381, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:10,  1.22s/question]Evaluating questions:  20%|██        | 2/10 [00:01<00:06,  1.19question/s]Evaluating questions:  30%|███       | 3/10 [00:03<00:07,  1.02s/question]Evaluating questions:  40%|████      | 4/10 [00:03<00:05,  1.17question/s]Evaluating questions:  50%|█████     | 5/10 [00:04<00:04,  1.06question/s]Evaluating questions:  60%|██████    | 6/10 [00:05<00:04,  1.04s/question]Evaluating questions:  70%|███████   | 7/10 [00:07<00:03,  1.12s/question]Evaluating questions:  80%|████████  | 8/10 [00:07<00:01,  1.07question/s]Evaluating questions:  90%|█████████ | 9/10 [00:08<00:00,  1.17question/s]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.03question/s]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.03question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 9.67s
+    Avg per question: 0.97s
+    Tokenize: 0.01s (0.1%)
+    Generate: 9.65s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[7/15] Evaluating: Agama Islam (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.22s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.22s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.22s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:07,  1.22s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.22s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:04,  1.22s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.22s/question]Evaluating questions:  80%|████████  | 8/10 [00:08<00:01,  1.03question/s]Evaluating questions:  90%|█████████ | 9/10 [00:09<00:00,  1.10question/s]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.14question/s]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.06s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 10.56s
+    Avg per question: 1.06s
+    Tokenize: 0.01s (0.1%)
+    Generate: 10.55s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+[8/15] Evaluating: PPKN (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.22s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.22s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.23s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:05,  1.13question/s]Evaluating questions:  50%|█████     | 5/10 [00:04<00:03,  1.52question/s]Evaluating questions:  60%|██████    | 6/10 [00:04<00:02,  1.83question/s]Evaluating questions:  70%|███████   | 7/10 [00:05<00:02,  1.30question/s]Evaluating questions:  80%|████████  | 8/10 [00:07<00:01,  1.09question/s]Evaluating questions:  90%|█████████ | 9/10 [00:07<00:00,  1.38question/s]Evaluating questions: 100%|██████████| 10/10 [00:08<00:00,  1.14question/s]Evaluating questions: 100%|██████████| 10/10 [00:08<00:00,  1.16question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 4/10 (40.0%)
+  Timing stats: 10 questions in 8.61s
+    Avg per question: 0.86s
+    Tokenize: 0.01s (0.1%)
+    Generate: 8.60s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 4/10 correct (40.00%)
+
+[9/15] Evaluating: IPS (SD)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:10,  1.22s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.22s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.22s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:06,  1.03s/question]Evaluating questions:  50%|█████     | 5/10 [00:05<00:05,  1.10s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:04,  1.14s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.17s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.18s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.04s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.10s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.12s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 9/10 (90.0%)
+  Timing stats: 10 questions in 11.22s
+    Avg per question: 1.12s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.21s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 9/10 correct (90.00%)
+
+[10/15] Evaluating: Sejarah (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.22s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.22s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.23s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:07,  1.23s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.23s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:04,  1.23s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.23s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.23s/question]Evaluating questions:  90%|█████████ | 9/10 [00:11<00:01,  1.23s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.23s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.23s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 4/10 (40.0%)
+  Timing stats: 10 questions in 12.26s
+    Avg per question: 1.23s
+    Tokenize: 0.01s (0.1%)
+    Generate: 12.25s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 4/10 correct (40.00%)
+
+[11/15] Evaluating: Fisika (SMA)
+  Available questions: 297, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.22s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.23s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.23s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:07,  1.23s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.23s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:04,  1.14s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.17s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.19s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:00,  1.04question/s]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.05s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.13s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 11.26s
+    Avg per question: 1.13s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.25s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[12/15] Evaluating: Ekonomi (SMA)
+  Available questions: 296, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:00<00:02,  3.93question/s]Evaluating questions:  20%|██        | 2/10 [00:00<00:02,  3.34question/s]Evaluating questions:  30%|███       | 3/10 [00:01<00:05,  1.38question/s]Evaluating questions:  40%|████      | 4/10 [00:02<00:03,  1.60question/s]Evaluating questions:  50%|█████     | 5/10 [00:03<00:04,  1.19question/s]Evaluating questions:  60%|██████    | 6/10 [00:04<00:03,  1.03question/s]Evaluating questions:  70%|███████   | 7/10 [00:05<00:03,  1.05s/question]Evaluating questions:  80%|████████  | 8/10 [00:07<00:02,  1.11s/question]Evaluating questions:  90%|█████████ | 9/10 [00:08<00:01,  1.14s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.10s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.06question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 9.41s
+    Avg per question: 0.94s
+    Tokenize: 0.01s (0.1%)
+    Generate: 9.40s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[13/15] Evaluating: Sosiologi (SMA)
+  Available questions: 295, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.23s/question]Evaluating questions:  20%|██        | 2/10 [00:01<00:07,  1.13question/s]Evaluating questions:  30%|███       | 3/10 [00:02<00:05,  1.19question/s]Evaluating questions:  40%|████      | 4/10 [00:03<00:04,  1.40question/s]Evaluating questions:  50%|█████     | 5/10 [00:03<00:03,  1.63question/s]Evaluating questions:  60%|██████    | 6/10 [00:04<00:03,  1.21question/s]Evaluating questions:  70%|███████   | 7/10 [00:06<00:02,  1.04question/s]Evaluating questions:  80%|████████  | 8/10 [00:07<00:02,  1.05s/question]Evaluating questions:  90%|█████████ | 9/10 [00:08<00:01,  1.10s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.14s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.02question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 4/10 (40.0%)
+  Timing stats: 10 questions in 9.78s
+    Avg per question: 0.98s
+    Tokenize: 0.01s (0.1%)
+    Generate: 9.77s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 4/10 correct (40.00%)
+
+[14/15] Evaluating: Geografi (Seleksi PTN)
+  Available questions: 294, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.25s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:09,  1.24s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.23s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:07,  1.23s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.23s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:04,  1.23s/question]Evaluating questions:  70%|███████   | 7/10 [00:07<00:02,  1.01question/s]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.07s/question]Evaluating questions:  90%|█████████ | 9/10 [00:09<00:00,  1.16question/s]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.16question/s]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.04s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 10.39s
+    Avg per question: 1.04s
+    Tokenize: 0.01s (0.1%)
+    Generate: 10.38s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[15/15] Evaluating: Kesenian (SMA)
+  Available questions: 201, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:00<00:04,  1.90question/s]Evaluating questions:  20%|██        | 2/10 [00:01<00:07,  1.07question/s]Evaluating questions:  30%|███       | 3/10 [00:02<00:07,  1.07s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:06,  1.13s/question]Evaluating questions:  50%|█████     | 5/10 [00:05<00:05,  1.17s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:04,  1.19s/question]Evaluating questions:  70%|███████   | 7/10 [00:06<00:02,  1.12question/s]Evaluating questions:  80%|████████  | 8/10 [00:08<00:01,  1.00question/s]Evaluating questions:  90%|█████████ | 9/10 [00:09<00:01,  1.07s/question]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.12s/question]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.06s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 10.62s
+    Avg per question: 1.06s
+    Tokenize: 0.01s (0.1%)
+    Generate: 10.60s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+  Cleaning up SeaLLMs/SeaLLMs-v3-7B-Chat from memory...
+  ✓ Cleanup complete. Ready for next model.
+
+================================================================================
+SUMMARY for SeaLLMs/SeaLLMs-v3-7B-Chat
+================================================================================
+Total Questions: 150
+Correct Answers: 77
+Overall Accuracy: 51.33%
+================================================================================
+
+
+################################################################################
+# MODEL 2/4: sail/Sailor-7B-Chat
+# Processing model 2 of 4 - Sequential execution
+################################################################################
+
+================================================================================
+Loading and evaluating model: sail/Sailor-7B-Chat
+================================================================================
+This may take a while on first run as the model will be downloaded...
+Model loaded successfully!
+Model device: cuda:0
+✓ Model is on cuda:0
+
+================================================================================
+Evaluating questions with sail/Sailor-7B-Chat
+================================================================================
+
+[1/15] Evaluating: Bahasa Sunda (SD)
+  Available questions: 718, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.27s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.27s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:08,  1.27s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.27s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.23s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:05,  1.27s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.27s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.18s/question]Evaluating questions:  90%|█████████ | 9/10 [00:11<00:01,  1.21s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.23s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.24s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 2/10 (20.0%)
+  Timing stats: 10 questions in 12.41s
+    Avg per question: 1.24s
+    Tokenize: 0.02s (0.1%)
+    Generate: 12.39s (99.8%)
+    Decode: 0.00s (0.0%)
+  Results: 2/10 correct (20.00%)
+
+[2/15] Evaluating: IPA (SD)
+  Available questions: 488, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.28s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.28s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.29s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.29s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:05,  1.29s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.23s/question]Evaluating questions:  80%|████████  | 8/10 [00:10<00:02,  1.25s/question]Evaluating questions:  90%|█████████ | 9/10 [00:11<00:01,  1.26s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.27s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.27s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 8/10 (80.0%)
+  Timing stats: 10 questions in 12.71s
+    Avg per question: 1.27s
+    Tokenize: 0.01s (0.1%)
+    Generate: 12.70s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 8/10 correct (80.00%)
+
+[3/15] Evaluating: Biologi (SMA)
+  Available questions: 457, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.31s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.31s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.32s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.31s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.30s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:05,  1.31s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:03,  1.30s/question]Evaluating questions:  80%|████████  | 8/10 [00:10<00:02,  1.30s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:00,  1.04question/s]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.06s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.20s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 11.95s
+    Avg per question: 1.20s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.94s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[4/15] Evaluating: Kimia (Seleksi PTN)
+  Available questions: 398, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.33s/question]Evaluating questions:  20%|██        | 2/10 [00:01<00:05,  1.54question/s]Evaluating questions:  30%|███       | 3/10 [00:02<00:06,  1.04question/s]Evaluating questions:  40%|████      | 4/10 [00:04<00:06,  1.10s/question]Evaluating questions:  50%|█████     | 5/10 [00:05<00:05,  1.17s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:04,  1.22s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.25s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.26s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.28s/question]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.03question/s]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.10s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 10.98s
+    Avg per question: 1.10s
+    Tokenize: 0.01s (0.1%)
+    Generate: 10.97s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[5/15] Evaluating: Bahasa Jawa (SD)
+  Available questions: 396, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.29s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.29s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:04,  1.12s/question]Evaluating questions:  70%|███████   | 7/10 [00:07<00:02,  1.23question/s]Evaluating questions:  80%|████████  | 8/10 [00:08<00:01,  1.04question/s]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.08s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.14s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.13s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 4/10 (40.0%)
+  Timing stats: 10 questions in 11.33s
+    Avg per question: 1.13s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.31s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 4/10 correct (40.00%)
+
+[6/15] Evaluating: Bahasa Indonesia (Seleksi PTN)
+  Available questions: 381, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.30s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.30s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.32s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.33s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.33s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:05,  1.32s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.19s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:01,  1.01question/s]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.10s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.16s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.21s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 12.05s
+    Avg per question: 1.21s
+    Tokenize: 0.01s (0.1%)
+    Generate: 12.04s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[7/15] Evaluating: Agama Islam (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.29s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.30s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:04,  1.17s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.21s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.24s/question]Evaluating questions:  90%|█████████ | 9/10 [00:11<00:01,  1.26s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.27s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.26s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 6/10 (60.0%)
+  Timing stats: 10 questions in 12.61s
+    Avg per question: 1.26s
+    Tokenize: 0.01s (0.1%)
+    Generate: 12.60s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 6/10 correct (60.00%)
+
+[8/15] Evaluating: PPKN (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:00<00:02,  3.25question/s]Evaluating questions:  20%|██        | 2/10 [00:01<00:07,  1.12question/s]Evaluating questions:  30%|███       | 3/10 [00:02<00:07,  1.09s/question]Evaluating questions:  40%|████      | 4/10 [00:03<00:04,  1.20question/s]Evaluating questions:  50%|█████     | 5/10 [00:04<00:05,  1.00s/question]Evaluating questions:  60%|██████    | 6/10 [00:05<00:03,  1.29question/s]Evaluating questions:  70%|███████   | 7/10 [00:05<00:01,  1.60question/s]Evaluating questions:  80%|████████  | 8/10 [00:06<00:01,  1.19question/s]Evaluating questions:  90%|█████████ | 9/10 [00:07<00:00,  1.01question/s]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.08s/question]Evaluating questions: 100%|██████████| 10/10 [00:09<00:00,  1.08question/s]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 6/10 (60.0%)
+  Timing stats: 10 questions in 9.23s
+    Avg per question: 0.92s
+    Tokenize: 0.01s (0.1%)
+    Generate: 9.22s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 6/10 correct (60.00%)
+
+[9/15] Evaluating: IPS (SD)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.29s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:07,  1.08s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:06,  1.16s/question]Evaluating questions:  50%|█████     | 5/10 [00:05<00:06,  1.21s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:04,  1.06s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.13s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.18s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.21s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.24s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.19s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 8/10 (80.0%)
+  Timing stats: 10 questions in 11.90s
+    Avg per question: 1.19s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.89s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 8/10 correct (80.00%)
+
+[10/15] Evaluating: Sejarah (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.30s/question]Evaluating questions:  20%|██        | 2/10 [00:01<00:05,  1.43question/s]Evaluating questions:  30%|███       | 3/10 [00:02<00:06,  1.03question/s]Evaluating questions:  40%|████      | 4/10 [00:04<00:06,  1.10s/question]Evaluating questions:  50%|█████     | 5/10 [00:05<00:05,  1.17s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:04,  1.21s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.24s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.21s/question]Evaluating questions:  90%|█████████ | 9/10 [00:09<00:00,  1.13question/s]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.01s/question]Evaluating questions: 100%|██████████| 10/10 [00:10<00:00,  1.06s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 10.65s
+    Avg per question: 1.06s
+    Tokenize: 0.01s (0.1%)
+    Generate: 10.64s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+[11/15] Evaluating: Fisika (SMA)
+  Available questions: 297, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.30s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.30s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.31s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.30s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:05,  1.32s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:03,  1.31s/question]Evaluating questions:  80%|████████  | 8/10 [00:10<00:02,  1.31s/question]Evaluating questions:  90%|█████████ | 9/10 [00:11<00:01,  1.31s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.31s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.31s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 13.07s
+    Avg per question: 1.31s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.06s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[12/15] Evaluating: Ekonomi (SMA)
+  Available questions: 296, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:00<00:01,  5.79question/s]Evaluating questions:  20%|██        | 2/10 [00:01<00:06,  1.17question/s]Evaluating questions:  30%|███       | 3/10 [00:02<00:07,  1.05s/question]Evaluating questions:  40%|████      | 4/10 [00:04<00:06,  1.14s/question]Evaluating questions:  50%|█████     | 5/10 [00:05<00:05,  1.20s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:04,  1.24s/question]Evaluating questions:  70%|███████   | 7/10 [00:07<00:03,  1.26s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.27s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.28s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.30s/question]Evaluating questions: 100%|██████████| 10/10 [00:11<00:00,  1.19s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 4/10 (40.0%)
+  Timing stats: 10 questions in 11.91s
+    Avg per question: 1.19s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.90s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 4/10 correct (40.00%)
+
+[13/15] Evaluating: Sosiologi (SMA)
+  Available questions: 295, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.29s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.31s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.31s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.31s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.31s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:05,  1.31s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:03,  1.32s/question]Evaluating questions:  80%|████████  | 8/10 [00:10<00:02,  1.31s/question]Evaluating questions:  90%|█████████ | 9/10 [00:11<00:01,  1.31s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.31s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.31s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 13.08s
+    Avg per question: 1.31s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.07s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[14/15] Evaluating: Geografi (Seleksi PTN)
+  Available questions: 294, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.33s/question]Evaluating questions:  20%|██        | 2/10 [00:01<00:05,  1.49question/s]Evaluating questions:  30%|███       | 3/10 [00:02<00:06,  1.05question/s]Evaluating questions:  40%|████      | 4/10 [00:04<00:06,  1.09s/question]Evaluating questions:  50%|█████     | 5/10 [00:05<00:05,  1.17s/question]Evaluating questions:  60%|██████    | 6/10 [00:06<00:04,  1.21s/question]Evaluating questions:  70%|███████   | 7/10 [00:08<00:03,  1.25s/question]Evaluating questions:  80%|████████  | 8/10 [00:09<00:02,  1.26s/question]Evaluating questions:  90%|█████████ | 9/10 [00:10<00:01,  1.28s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.30s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.20s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 4/10 (40.0%)
+  Timing stats: 10 questions in 12.00s
+    Avg per question: 1.20s
+    Tokenize: 0.01s (0.1%)
+    Generate: 11.99s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 4/10 correct (40.00%)
+
+[15/15] Evaluating: Kesenian (SMA)
+  Available questions: 201, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:11,  1.31s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.30s/question]Evaluating questions:  30%|███       | 3/10 [00:03<00:09,  1.30s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:07,  1.29s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.29s/question]Evaluating questions:  60%|██████    | 6/10 [00:07<00:05,  1.29s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:03,  1.29s/question]Evaluating questions:  80%|████████  | 8/10 [00:10<00:02,  1.29s/question]Evaluating questions:  90%|█████████ | 9/10 [00:11<00:01,  1.30s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.30s/question]Evaluating questions: 100%|██████████| 10/10 [00:12<00:00,  1.30s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 12.95s
+    Avg per question: 1.30s
+    Tokenize: 0.01s (0.1%)
+    Generate: 12.94s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+  Cleaning up sail/Sailor-7B-Chat from memory...
+  ✓ Cleanup complete. Ready for next model.
+
+================================================================================
+SUMMARY for sail/Sailor-7B-Chat
+================================================================================
+Total Questions: 150
+Correct Answers: 73
+Overall Accuracy: 48.67%
+================================================================================
+
+
+################################################################################
+# MODEL 3/4: google/gemma-3-12b-it
+# Processing model 3 of 4 - Sequential execution
+################################################################################
+
+================================================================================
+Loading and evaluating model: google/gemma-3-12b-it
+================================================================================
+This may take a while on first run as the model will be downloaded...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:04,  1.03s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.05it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.10it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.12it/s]
+Model loaded successfully!
+Model device: cuda:0
+✓ Model is on cuda:0
+
+================================================================================
+Evaluating questions with google/gemma-3-12b-it
+================================================================================
+
+[1/15] Evaluating: Bahasa Sunda (SD)
+  Available questions: 718, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.67s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.67s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.66s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.66s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.67s/question]Evaluating questions:  60%|██████    | 6/10 [00:16<00:10,  2.68s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:08,  2.67s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.71s/question]Evaluating questions:  90%|█████████ | 9/10 [00:24<00:02,  2.70s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.68s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.68s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 6/10 (60.0%)
+  Timing stats: 10 questions in 26.79s
+    Avg per question: 2.68s
+    Tokenize: 0.02s (0.1%)
+    Generate: 26.77s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 6/10 correct (60.00%)
+
+[2/15] Evaluating: IPA (SD)
+  Available questions: 488, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.63s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.63s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.66s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.65s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.65s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.63s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.63s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.63s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.63s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 10/10 (100.0%)
+  Timing stats: 10 questions in 26.36s
+    Avg per question: 2.64s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.35s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 10/10 correct (100.00%)
+
+[3/15] Evaluating: Biologi (SMA)
+  Available questions: 457, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.65s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.64s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.64s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.64s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.63s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.63s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.62s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.62s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.63s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.63s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 9/10 (90.0%)
+  Timing stats: 10 questions in 26.32s
+    Avg per question: 2.63s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.31s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 9/10 correct (90.00%)
+
+[4/15] Evaluating: Kimia (Seleksi PTN)
+  Available questions: 398, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.65s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.63s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.64s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.63s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.64s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.64s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.64s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.64s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.63s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 26.38s
+    Avg per question: 2.64s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.37s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[5/15] Evaluating: Bahasa Jawa (SD)
+  Available questions: 396, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.61s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:20,  2.61s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.62s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.63s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.63s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.63s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.64s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.64s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.66s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.65s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 26.39s
+    Avg per question: 2.64s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.37s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+[6/15] Evaluating: Bahasa Indonesia (Seleksi PTN)
+  Available questions: 381, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.66s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.67s/question]Evaluating questions:  30%|███       | 3/10 [00:08<00:18,  2.69s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:16,  2.68s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.68s/question]Evaluating questions:  60%|██████    | 6/10 [00:16<00:10,  2.67s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:08,  2.69s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.70s/question]Evaluating questions:  90%|█████████ | 9/10 [00:24<00:02,  2.69s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.68s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.68s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 9/10 (90.0%)
+  Timing stats: 10 questions in 26.81s
+    Avg per question: 2.68s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.80s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 9/10 correct (90.00%)
+
+[7/15] Evaluating: Agama Islam (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.63s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.64s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.64s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.64s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.63s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.63s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.63s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.62s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.63s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 26.34s
+    Avg per question: 2.63s
+    Tokenize: 0.01s (0.1%)
+    Generate: 26.32s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+[8/15] Evaluating: PPKN (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.62s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:20,  2.62s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.62s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.62s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.63s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.67s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:08,  2.67s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.66s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.65s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 26.42s
+    Avg per question: 2.64s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.40s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+[9/15] Evaluating: IPS (SD)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:24,  2.72s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.67s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.65s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.64s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.64s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.64s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.63s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.63s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.63s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.63s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 9/10 (90.0%)
+  Timing stats: 10 questions in 26.40s
+    Avg per question: 2.64s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.39s (100.0%)
+    Decode: 0.00s (0.0%)
+  Results: 9/10 correct (90.00%)
+
+[10/15] Evaluating: Sejarah (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.64s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.64s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.63s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.63s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.62s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.63s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.62s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.62s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.62s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.61s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.62s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 26.21s
+    Avg per question: 2.62s
+    Tokenize: 0.01s (0.1%)
+    Generate: 26.19s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[11/15] Evaluating: Fisika (SMA)
+  Available questions: 297, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.63s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.64s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.64s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.64s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.64s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.64s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.64s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.64s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 6/10 (60.0%)
+  Timing stats: 10 questions in 26.39s
+    Avg per question: 2.64s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.37s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 6/10 correct (60.00%)
+
+[12/15] Evaluating: Ekonomi (SMA)
+  Available questions: 296, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.61s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.63s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.64s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.64s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.63s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.63s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.63s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.63s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 6/10 (60.0%)
+  Timing stats: 10 questions in 26.37s
+    Avg per question: 2.64s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.36s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 6/10 correct (60.00%)
+
+[13/15] Evaluating: Sosiologi (SMA)
+  Available questions: 295, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.64s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.63s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.63s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.63s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.65s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.65s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.64s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.65s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.63s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.62s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.63s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 8/10 (80.0%)
+  Timing stats: 10 questions in 26.34s
+    Avg per question: 2.63s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.32s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 8/10 correct (80.00%)
+
+[14/15] Evaluating: Geografi (Seleksi PTN)
+  Available questions: 294, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.64s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:20,  2.62s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.62s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:15,  2.62s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.61s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.62s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.63s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.64s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.63s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 26.32s
+    Avg per question: 2.63s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.31s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[15/15] Evaluating: Kesenian (SMA)
+  Available questions: 201, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:02<00:23,  2.65s/question]Evaluating questions:  20%|██        | 2/10 [00:05<00:21,  2.64s/question]Evaluating questions:  30%|███       | 3/10 [00:07<00:18,  2.64s/question]Evaluating questions:  40%|████      | 4/10 [00:10<00:16,  2.67s/question]Evaluating questions:  50%|█████     | 5/10 [00:13<00:13,  2.66s/question]Evaluating questions:  60%|██████    | 6/10 [00:15<00:10,  2.65s/question]Evaluating questions:  70%|███████   | 7/10 [00:18<00:07,  2.65s/question]Evaluating questions:  80%|████████  | 8/10 [00:21<00:05,  2.64s/question]Evaluating questions:  90%|█████████ | 9/10 [00:23<00:02,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.64s/question]Evaluating questions: 100%|██████████| 10/10 [00:26<00:00,  2.65s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 26.45s
+    Avg per question: 2.65s
+    Tokenize: 0.01s (0.0%)
+    Generate: 26.44s (100.0%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+  Cleaning up google/gemma-3-12b-it from memory...
+  ✓ Cleanup complete. Ready for next model.
+
+================================================================================
+SUMMARY for google/gemma-3-12b-it
+================================================================================
+Total Questions: 150
+Correct Answers: 104
+Overall Accuracy: 69.33%
+================================================================================
+
+
+################################################################################
+# MODEL 4/4: CohereLabs/aya-expanse-8b
+# Processing model 4 of 4 - Sequential execution
+################################################################################
+
+================================================================================
+Loading and evaluating model: CohereLabs/aya-expanse-8b
+================================================================================
+This may take a while on first run as the model will be downloaded...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.27it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.25it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:01,  1.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.28it/s]
+Model loaded successfully!
+Model device: cuda:0
+✓ Model is on cuda:0
+
+================================================================================
+Evaluating questions with CohereLabs/aya-expanse-8b
+================================================================================
+
+[1/15] Evaluating: Bahasa Sunda (SD)
+  Available questions: 718, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.36s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.36s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.36s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.36s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.37s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.39s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.39s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 2/10 (20.0%)
+  Timing stats: 10 questions in 13.78s
+    Avg per question: 1.38s
+    Tokenize: 0.02s (0.1%)
+    Generate: 13.75s (99.8%)
+    Decode: 0.00s (0.0%)
+  Results: 2/10 correct (20.00%)
+
+[2/15] Evaluating: IPA (SD)
+  Available questions: 488, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.37s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.37s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.37s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.37s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.37s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.37s/question]Evaluating questions:  80%|████████  | 8/10 [00:10<00:02,  1.37s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.37s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.37s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.37s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 7/10 (70.0%)
+  Timing stats: 10 questions in 13.74s
+    Avg per question: 1.37s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.72s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 7/10 correct (70.00%)
+
+[3/15] Evaluating: Biologi (SMA)
+  Available questions: 457, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.39s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.39s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 13.81s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.80s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[4/15] Evaluating: Kimia (Seleksi PTN)
+  Available questions: 398, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.40s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.39s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.39s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.39s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.39s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.39s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.39s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.39s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 1/10 (10.0%)
+  Timing stats: 10 questions in 13.87s
+    Avg per question: 1.39s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.86s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 1/10 correct (10.00%)
+
+[5/15] Evaluating: Bahasa Jawa (SD)
+  Available questions: 396, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.37s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.37s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 2/10 (20.0%)
+  Timing stats: 10 questions in 13.78s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.77s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 2/10 correct (20.00%)
+
+[6/15] Evaluating: Bahasa Indonesia (Seleksi PTN)
+  Available questions: 381, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.40s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.40s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:07,  1.40s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.39s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.41s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.41s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.40s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.40s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 2/10 (20.0%)
+  Timing stats: 10 questions in 13.97s
+    Avg per question: 1.40s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.95s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 2/10 correct (20.00%)
+
+[7/15] Evaluating: Agama Islam (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.37s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 13.80s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.79s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[8/15] Evaluating: PPKN (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 6/10 (60.0%)
+  Timing stats: 10 questions in 13.82s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.81s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 6/10 correct (60.00%)
+
+[9/15] Evaluating: IPS (SD)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:10,  1.37s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.37s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.37s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.37s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.37s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.37s/question]Evaluating questions:  80%|████████  | 8/10 [00:10<00:02,  1.37s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.37s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.37s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.37s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 13.74s
+    Avg per question: 1.37s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.73s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[10/15] Evaluating: Sejarah (SMA)
+  Available questions: 300, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.37s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 3/10 (30.0%)
+  Timing stats: 10 questions in 13.77s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.76s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 3/10 correct (30.00%)
+
+[11/15] Evaluating: Fisika (SMA)
+  Available questions: 297, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.38s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.39s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.39s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 2/10 (20.0%)
+  Timing stats: 10 questions in 13.84s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.83s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 2/10 correct (20.00%)
+
+[12/15] Evaluating: Ekonomi (SMA)
+  Available questions: 296, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.37s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 13.81s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.80s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+[13/15] Evaluating: Sosiologi (SMA)
+  Available questions: 295, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.37s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.39s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 4/10 (40.0%)
+  Timing stats: 10 questions in 13.82s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.81s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 4/10 correct (40.00%)
+
+[14/15] Evaluating: Geografi (Seleksi PTN)
+  Available questions: 294, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.39s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.39s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 2/10 (20.0%)
+  Timing stats: 10 questions in 13.83s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.82s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 2/10 correct (20.00%)
+
+[15/15] Evaluating: Kesenian (SMA)
+  Available questions: 201, Sampling: 10
+  ✓ Loaded 10 questions
+Evaluating questions:   0%|          | 0/10 [00:00<?, ?question/s]Evaluating questions:  10%|█         | 1/10 [00:01<00:12,  1.39s/question]Evaluating questions:  20%|██        | 2/10 [00:02<00:11,  1.38s/question]Evaluating questions:  30%|███       | 3/10 [00:04<00:09,  1.38s/question]Evaluating questions:  40%|████      | 4/10 [00:05<00:08,  1.38s/question]Evaluating questions:  50%|█████     | 5/10 [00:06<00:06,  1.38s/question]Evaluating questions:  60%|██████    | 6/10 [00:08<00:05,  1.38s/question]Evaluating questions:  70%|███████   | 7/10 [00:09<00:04,  1.38s/question]Evaluating questions:  80%|████████  | 8/10 [00:11<00:02,  1.38s/question]Evaluating questions:  90%|█████████ | 9/10 [00:12<00:01,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]Evaluating questions: 100%|██████████| 10/10 [00:13<00:00,  1.38s/question]
+
+  Evaluation complete: 10/10 questions processed
+  Correct answers: 5/10 (50.0%)
+  Timing stats: 10 questions in 13.78s
+    Avg per question: 1.38s
+    Tokenize: 0.01s (0.1%)
+    Generate: 13.77s (99.9%)
+    Decode: 0.00s (0.0%)
+  Results: 5/10 correct (50.00%)
+
+  Cleaning up CohereLabs/aya-expanse-8b from memory...
+  ✓ Cleanup complete. Ready for next model.
+
+================================================================================
+SUMMARY for CohereLabs/aya-expanse-8b
+================================================================================
+Total Questions: 150
+Correct Answers: 52
+Overall Accuracy: 34.67%
+================================================================================
+
+
+================================================================================
+COMPARATIVE SUMMARY - ALL MODELS
+================================================================================
+Model                                              Accuracy        Correct/Total       
+--------------------------------------------------------------------------------
+SeaLLMs/SeaLLMs-v3-7B-Chat                          51.33%         77/150
+sail/Sailor-7B-Chat                                 48.67%         73/150
+google/gemma-3-12b-it                               69.33%         104/150
+CohereLabs/aya-expanse-8b                           34.67%         52/150
+================================================================================
+
+🏆 Best Model: google/gemma-3-12b-it with 69.33% accuracy
+
+
+================================================================================
+DETAILED STATISTICS BY MODEL
+================================================================================
+
+--------------------------------------------------------------------------------
+Model: SeaLLMs/SeaLLMs-v3-7B-Chat
+--------------------------------------------------------------------------------
+
+Accuracy by Subject:
+Subject                                  Accuracy            
+------------------------------------------------------------
+Agama Islam                              7/10 (70.00%)
+Bahasa Indonesia                         5/10 (50.00%)
+Bahasa Jawa                              5/10 (50.00%)
+Bahasa Sunda                             5/10 (50.00%)
+Biologi                                  5/10 (50.00%)
+Ekonomi                                  5/10 (50.00%)
+Fisika                                   3/10 (30.00%)
+Geografi                                 3/10 (30.00%)
+IPA                                      6/10 (60.00%)
+IPS                                      9/10 (90.00%)
+Kesenian                                 7/10 (70.00%)
+Kimia                                    5/10 (50.00%)
+PPKN                                     4/10 (40.00%)
+Sejarah                                  4/10 (40.00%)
+Sosiologi                                4/10 (40.00%)
+
+--------------------------------------------------------------------------------
+Model: sail/Sailor-7B-Chat
+--------------------------------------------------------------------------------
+
+Accuracy by Subject:
+Subject                                  Accuracy            
+------------------------------------------------------------
+Agama Islam                              6/10 (60.00%)
+Bahasa Indonesia                         5/10 (50.00%)
+Bahasa Jawa                              4/10 (40.00%)
+Bahasa Sunda                             2/10 (20.00%)
+Biologi                                  3/10 (30.00%)
+Ekonomi                                  4/10 (40.00%)
+Fisika                                   3/10 (30.00%)
+Geografi                                 4/10 (40.00%)
+IPA                                      8/10 (80.00%)
+IPS                                      8/10 (80.00%)
+Kesenian                                 5/10 (50.00%)
+Kimia                                    3/10 (30.00%)
+PPKN                                     6/10 (60.00%)
+Sejarah                                  7/10 (70.00%)
+Sosiologi                                5/10 (50.00%)
+
+--------------------------------------------------------------------------------
+Model: google/gemma-3-12b-it
+--------------------------------------------------------------------------------
+
+Accuracy by Subject:
+Subject                                  Accuracy            
+------------------------------------------------------------
+Agama Islam                              7/10 (70.00%)
+Bahasa Indonesia                         9/10 (90.00%)
+Bahasa Jawa                              7/10 (70.00%)
+Bahasa Sunda                             6/10 (60.00%)
+Biologi                                  9/10 (90.00%)
+Ekonomi                                  6/10 (60.00%)
+Fisika                                   6/10 (60.00%)
+Geografi                                 5/10 (50.00%)
+IPA                                      10/10 (100.00%)
+IPS                                      9/10 (90.00%)
+Kesenian                                 7/10 (70.00%)
+Kimia                                    3/10 (30.00%)
+PPKN                                     7/10 (70.00%)
+Sejarah                                  5/10 (50.00%)
+Sosiologi                                8/10 (80.00%)
+
+--------------------------------------------------------------------------------
+Model: CohereLabs/aya-expanse-8b
+--------------------------------------------------------------------------------
+
+Accuracy by Subject:
+Subject                                  Accuracy            
+------------------------------------------------------------
+Agama Islam                              3/10 (30.00%)
+Bahasa Indonesia                         2/10 (20.00%)
+Bahasa Jawa                              2/10 (20.00%)
+Bahasa Sunda                             2/10 (20.00%)
+Biologi                                  3/10 (30.00%)
+Ekonomi                                  5/10 (50.00%)
+Fisika                                   2/10 (20.00%)
+Geografi                                 2/10 (20.00%)
+IPA                                      7/10 (70.00%)
+IPS                                      5/10 (50.00%)
+Kesenian                                 5/10 (50.00%)
+Kimia                                    1/10 (10.00%)
+PPKN                                     6/10 (60.00%)
+Sejarah                                  3/10 (30.00%)
+Sosiologi                                4/10 (40.00%)
