@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\begin{document}
+
+\title{Chain of Thought Reasoning Evaluation Results}
+\author{IndoMMLU Dataset}
+\maketitle
+
+\section{Comparative Summary}
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Model & Accuracy (\%) & Correct/Total \\
+\midrule
+SeaLLMs/SeaLLMs-v3-7B-Chat & 50.00 & 75/150 \\
+sail/Sailor-7B-Chat & 42.00 & 63/150 \\
+google/gemma-3-12b-it & 17.33 & 26/150 \\
+CohereLabs/aya-expanse-8b & 18.67 & 28/150 \\
+\bottomrule
+\end{tabular}
+\caption{Overall accuracy comparison across all models}
+\end{table}
+
+\textbf{Best Model:} SeaLLMs/SeaLLMs-v3-7B-Chat with 50.00\% accuracy.
+
+\section{Detailed Statistics by Model}
+
+\subsection{SeaLLMs/SeaLLMs-v3-7B-Chat}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Subject & Correct/Total & Accuracy (\%) \\
+\midrule
+Agama Islam & 6/10 & 60.00 \\
+Bahasa Indonesia & 4/10 & 40.00 \\
+Bahasa Jawa & 4/10 & 40.00 \\
+Bahasa Sunda & 6/10 & 60.00 \\
+Biologi & 4/10 & 40.00 \\
+Ekonomi & 4/10 & 40.00 \\
+Fisika & 4/10 & 40.00 \\
+Geografi & 2/10 & 20.00 \\
+IPA & 8/10 & 80.00 \\
+IPS & 7/10 & 70.00 \\
+Kesenian & 6/10 & 60.00 \\
+Kimia & 4/10 & 40.00 \\
+PPKN & 5/10 & 50.00 \\
+Sejarah & 5/10 & 50.00 \\
+Sosiologi & 6/10 & 60.00 \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy by subject for SeaLLMs/SeaLLMs-v3-7B-Chat}
+\end{table}
+
+\subsection{sail/Sailor-7B-Chat}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Subject & Correct/Total & Accuracy (\%) \\
+\midrule
+Agama Islam & 5/10 & 50.00 \\
+Bahasa Indonesia & 5/10 & 50.00 \\
+Bahasa Jawa & 1/10 & 10.00 \\
+Bahasa Sunda & 3/10 & 30.00 \\
+Biologi & 3/10 & 30.00 \\
+Ekonomi & 5/10 & 50.00 \\
+Fisika & 2/10 & 20.00 \\
+Geografi & 1/10 & 10.00 \\
+IPA & 4/10 & 40.00 \\
+IPS & 8/10 & 80.00 \\
+Kesenian & 6/10 & 60.00 \\
+Kimia & 4/10 & 40.00 \\
+PPKN & 7/10 & 70.00 \\
+Sejarah & 5/10 & 50.00 \\
+Sosiologi & 4/10 & 40.00 \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy by subject for sail/Sailor-7B-Chat}
+\end{table}
+
+\subsection{google/gemma-3-12b-it}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Subject & Correct/Total & Accuracy (\%) \\
+\midrule
+Agama Islam & 2/10 & 20.00 \\
+Bahasa Indonesia & 4/10 & 40.00 \\
+Bahasa Jawa & 1/10 & 10.00 \\
+Bahasa Sunda & 2/10 & 20.00 \\
+Biologi & 0/10 & 0.00 \\
+Ekonomi & 0/10 & 0.00 \\
+Fisika & 2/10 & 20.00 \\
+Geografi & 2/10 & 20.00 \\
+IPA & 1/10 & 10.00 \\
+IPS & 3/10 & 30.00 \\
+Kesenian & 1/10 & 10.00 \\
+Kimia & 2/10 & 20.00 \\
+PPKN & 2/10 & 20.00 \\
+Sejarah & 2/10 & 20.00 \\
+Sosiologi & 2/10 & 20.00 \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy by subject for google/gemma-3-12b-it}
+\end{table}
+
+\subsection{CohereLabs/aya-expanse-8b}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Subject & Correct/Total & Accuracy (\%) \\
+\midrule
+Agama Islam & 2/10 & 20.00 \\
+Bahasa Indonesia & 4/10 & 40.00 \\
+Bahasa Jawa & 1/10 & 10.00 \\
+Bahasa Sunda & 2/10 & 20.00 \\
+Biologi & 0/10 & 0.00 \\
+Ekonomi & 0/10 & 0.00 \\
+Fisika & 2/10 & 20.00 \\
+Geografi & 2/10 & 20.00 \\
+IPA & 1/10 & 10.00 \\
+IPS & 3/10 & 30.00 \\
+Kesenian & 1/10 & 10.00 \\
+Kimia & 4/10 & 40.00 \\
+PPKN & 2/10 & 20.00 \\
+Sejarah & 2/10 & 20.00 \\
+Sosiologi & 2/10 & 20.00 \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy by subject for CohereLabs/aya-expanse-8b}
+\end{table}
+
+\end{document}
